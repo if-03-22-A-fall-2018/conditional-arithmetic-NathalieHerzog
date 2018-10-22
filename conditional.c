@@ -78,15 +78,14 @@ void multiply(int range)
 }
  
 void performOperation(int operation, int range){
-  switch (operation)
-  {
-    case 1:
-      add(&range);
-      break;
-    case 2:
-      multiply(&range);
-      break;
-  }
+  if(operation==1)
+	{
+		add(&range);
+	}
+  else
+	{
+		multiply(&range);
+	}
 }
  
 int main(int argc, char const *argv[]) {
